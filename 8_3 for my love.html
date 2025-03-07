@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông điệp bí mật</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #ffccdd;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .container {
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+        }
+        h1 {
+            color: #ffebcd;
+            font-size: 28px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            background: linear-gradient(45deg, #ff4b5c, #ff8a8a);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin: 10px;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+        button:hover {
+            background: linear-gradient(45deg, #cc0033, #ff6666);
+            transform: scale(1.1);
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 250px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chỉ dành cho Trịnh Anh Thư</h1>
+        
+        <div class="image-container">
+            <img src="https://hieubui27.github.io/image/Screenshot%202025-03-07%20180047.png" alt="">
+        <p>Chị có muốn nhận thông điệp không 😋?</p>
+        </div>
+        <div class="button-container">
+            <button onclick="acceptMessage()">Có</button>
+            <button onclick="declineMessage()">Không</button>
+        </div>
+    </div>
+    <script>
+        function acceptMessage() {
+            window.location.href = "chucmung.html";
+        }
+        function declineMessage() {
+            window.location.href = "khongnhan.html";
+        }
+    </script>
+</body>
+</html>
